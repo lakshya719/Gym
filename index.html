@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM KA NAAM | Fitness Club</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #252525;
+        }
+
+        .logo {
+            color: #ffcc00;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #bbbbbb;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .hero span {
+            color: white;
+        }
+
+        .plans {
+            padding: 50px 20px 70px;
+            text-align: center;
+        }
+
+        .plans h2 {
+            font-size: 35px;
+            color: #ffcc00;
+            margin-bottom: 40px;
+        }
+
+        .plan-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 35px 25px;
+            width: 280px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #ffcc00;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px 70px;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 16px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            background: #1ebe5d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 350px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .plans h2 {
+                font-size: 29px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 340px;
+            }
+
+            .contact h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">GYM KA NAAM</div>
+    </header>
+
+    <section class="hero">
+        <h1>Strong Bano,<br>Fit Raho</h1>
+        <p>
+            <span>Build Your Strength.</span><br>
+            Transform Yourself With Us.
+        </p>
+    </section>
+
+    <section class="plans">
+        <h2>OUR MEMBERSHIP PLANS</h2>
+
+        <div class="plan-container">
+
+            <div class="card">
+                <h3>Monthly Plan</h3>
+                <div class="price">₹999</div>
+                <p>1 Month Membership</p>
+            </div>
+
+            <div class="card">
+                <h3>Yearly Plan</h3>
+                <div class="price">₹7999</div>
+                <p>12 Months Membership</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Ready To Get Stronger?</h2>
+
+        <a class="whatsapp"
+           href="https://wa.me/91[PHONE NUMBER]"
+           target="_blank">
+            WhatsApp Pe Baat Karo
+        </a>
+    </section>
+
+    <footer>
+        © 2026 GYM KA NAAM. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
